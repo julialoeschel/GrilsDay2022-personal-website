@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+
+body {
+  background-color: mintcream;
+  font-family: "Space Mono", monospace;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 3px green solid;
+  color: darkgreen;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+section {
+  padding-bottom: 20px;
+  border-bottom: 3px green solid;
+}
+
+.ilikeItem {
+  display: grid;
+  grid-template-rows: 1fr 20px;
+  align-items: center;
+}
+
+.container-ilike {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li div {
+  font-size: 14px;
+}
+li span {
+  text-align: center;
+  display: block;
+  font-family: "Inspiration", cursive;
+  font-size: 30px;
+}
+
+footer {
+  background-color: green;
+  position: relative;
+  left: -8px;
+  width: 100%;
+  bottom: -8px;
+  padding: 10px;
+}
+
+footer div {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  justify-content: center;
+}
