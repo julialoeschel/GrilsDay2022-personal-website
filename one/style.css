@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
 
+:root {
+  --hintergrundfarbe: mintcream;
+  --hauptfarbe: darkgreen;
+  --infoSchriftArt: "Inspiration", cursive;
+  --hauptSchriftArt: "Space Mono", monospace;
+}
+
 body {
-  background-color: mintcream;
-  font-family: "Space Mono", monospace;
+  background-color: var(--hintergrundfarbe);
+  font-family: var(--hauptSchriftArt);
 }
 
 header {
@@ -11,8 +18,8 @@ header {
   grid-template-columns: 180px 1fr;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 3px green solid;
-  color: darkgreen;
+  border-bottom: 3px solid var(--hauptfarbe);
+  color: var(--hauptfarbe);
 }
 
 header img {
@@ -21,7 +28,7 @@ header img {
 
 section {
   padding-bottom: 20px;
-  border-bottom: 3px green solid;
+  border-bottom: 3px solid var(--hauptfarbe);
 }
 
 .ilikeItem {
@@ -46,12 +53,12 @@ li div {
 li span {
   text-align: center;
   display: block;
-  font-family: "Inspiration", cursive;
+  font-family: var(--infoSchriftArt);
   font-size: 30px;
 }
 
 footer {
-  background-color: green;
+  background-color: var(--hauptfarbe);
   position: relative;
   left: -8px;
   width: 100%;

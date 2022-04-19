@@ -4,18 +4,27 @@
   box-sizing: border-box;
 }
 
+:root {
+  --hintergrundfarbe: #f5dfd4;
+  --hintergrundBild: url("https://images.unsplash.com/photo-1647076338816-2d031db51c1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  --zitatSchriftArt: "Gochi Hand", cursive;
+  --infoSchriftArt: "Monoton", cursive;
+  --schriftFarbe: black;
+}
+
 body {
-  background-color: #f5dfd4;
+  background-color: var(--hintergrundfarbe);
   margin: 0;
   padding: 0;
+  color: var(--schriftFarbe);
 }
 
 header {
-  background-image: url("https://images.unsplash.com/photo-1647076338816-2d031db51c1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-image: var(--hintergrundBild);
 }
 
 .profileName {
-  color: #0a202b;
+  color: var(--schriftFarbe);
   height: 150px;
   margin-top: -10px;
   padding-left: 20px;
@@ -27,7 +36,7 @@ header h1 {
 }
 
 header span {
-  background-color: #f5dfd4;
+  background-color: var(--hintergrundfarbe);
   padding: 2px 5px;
 }
 
@@ -42,7 +51,7 @@ section {
 }
 
 .zitat {
-  font-family: "Gochi Hand", cursive;
+  font-family: var(--zitatSchriftArt);
   font-size: 20px;
 }
 
@@ -64,12 +73,12 @@ section {
 .key {
   display: inline-block;
   width: 60px;
-  font-family: "Gochi Hand", cursive;
+  font-family: var(--zitatSchriftArt);
 }
 
 .value {
   display: block;
-  font-family: "Monoton", cursive;
+  font-family: var(--infoSchriftArt);
   font-size: 30px;
 }
 
@@ -89,7 +98,7 @@ section {
 }
 
 footer h2 {
-  background-image: url("https://images.unsplash.com/photo-1647076338816-2d031db51c1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-image: var(--hintergrundBild);
   padding-left: 30px;
   position: relative;
   bottom: 0;
